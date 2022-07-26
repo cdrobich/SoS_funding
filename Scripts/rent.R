@@ -19,19 +19,22 @@ rent_long <- pivot_longer(rent, CGSM:PDF_difference, names_to = "type",
 rent_long %>% 
   filter(type %in% c('CGS_difference', 'PGS_difference',
                      'City', 'value')) %>% 
-  ggplot(aes(fill = type, x = City,
-                   y = value)) + 
+  ggplot(aes(x = reorder(City, + value), y = value, fill = type)) + 
   geom_col(position = "dodge") +
   coord_flip() +
-  theme_classic() +
-  theme(axis.text = element_text(size = 13),
+  theme_minimal() +
+  theme(axis.text = element_text(size = 16),
         legend.position = "none") +
   scale_fill_manual(labels = c("CGS-M", "PGS-D"),
                     values = c("#3A5683", "#439A86")) +
   theme(panel.background = element_rect(
     fill = '#C9DFEC'),
     plot.background = element_rect(fill = '#C9DFEC')) +
-  labs(x = '', y = 'CAD $') 
+  labs(x = '', y = 'CAD $') +
+  geom_hline(yintercept = 0, lwd = 2, linetype = "solid",
+             colour = '#EE6C4D') +
+  scale_y_continuous(label = comma,
+                     limits = c(-25000, 10000))
 
 
 ggsave("Figures/rent_tuition.jpeg")
