@@ -1,6 +1,6 @@
 ## Support Our Science
 
-This is the repository for the data and code used by [Support Our Science](www.supportourscience.ca), a movement to increase graduate student and postdoctoral funding in Canada.
+This is the repository for the data used by [Support Our Science](www.supportourscience.ca), a movement to increase graduate student and postdoctoral funding in Canada.
 
 -----------------------------
 
