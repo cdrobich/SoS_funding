@@ -1,6 +1,6 @@
 # Support Our Science
 
-Data Folder
+`Data` Folder
 
 `rent_cities`
 * Remaining income once tuition and rent are deducted from CGS-M ($17,500/yr) and PGS-D ($21,000/yr) award amounts. 
@@ -14,3 +14,7 @@ Data Folder
 * NSERC funding for CGS-M, PGS-D, CGS-D, and PDF from 2003 to present
 * Inflation calculated using [Bank of Canada info](https://www.bankofcanada.ca/rates/related/inflation-calculator/)
 * `single` and `four` represent the poverty line for a single person and a family of four, respectively, in a community of > 500k [Link](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=11100241010)
+
+`pdf_costofliving`
+* Cost of living information for major cities in Canada which includes rent for a [2-bedroom apartment]((https://www.zumper.com/blog/rental-price-data-canada/), utilities (phone, rent, electricity), transportation (car), grocery for a household of three, and preschool [source](https://wowa.ca/cost-of-living-canada)
+* `Difference` calculated by subtraction cost of living expenses for a year from $45,000 (NSERC PDF)
