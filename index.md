@@ -1,37 +1,41 @@
-## Welcome to GitHub Pages
+## Support Our Science
 
-You can use the [editor on GitHub](https://github.com/cdrobich/SoS_funding/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This is the repository for the data and code used by [Support Our Science](www.supportourscience.ca), a movement to increase graduate student and postdoctoral funding in Canada.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+-----------------------------
 
-### Markdown
+### Data
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+#### Graduate Student Cost of Living
 
-```markdown
-Syntax highlighted code block
+`rent_cities.csv`
+* Remaining income once tuition and rent are deducted from CGS-M ($17,500/yr) and PGS-D ($21,000/yr) award amounts. 
+    * Rent is 12 months of the average rent for a 1-bedroom apartment in each city as of July 21, 2022 [Link](https://www.zumper.com/blog/rental-price-data-canada/)
+    * Tuition is for a full-time Canadian graduate student in the 2021 - 2022 academic year [Link](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3710004501&cubeTimeFrame.startYear=2021+%2F+2022&cubeTimeFrame.endYear=2021+%2F+2022&referencePeriods=20210101%2C20210101)
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+#### Location of Canadian Universities
 
-1. Numbered
-2. List
+`universities_NSERC_locations.csv`
+* location of all universities that received PhD and Postdoctoral funding in Canada; cities are all included in `rent_cities`
 
-**Bold** and _Italic_ and `Code` text
+#### NSERC Awards and Inflation
 
-[Link](url) and ![Image](src)
-```
+`NSERC_funding_inflation_May20.csv`
+* NSERC funding for CGS-M, PGS-D, CGS-D, and PDF from 2003 to present
+* Inflation calculated using [Bank of Canada info](https://www.bankofcanada.ca/rates/related/inflation-calculator/)
+* `single` and `four` represent the poverty line for a single person and a family of four, respectively, in a community of > 500k [Link](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=11100241010)
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+#### Cost of Living and PDF 
 
-### Jekyll Themes
+`pdf_costofliving.csv`
+* Cost of living information for major cities in Canada which includes rent for a [2-bedroom apartment](https://www.zumper.com/blog/rental-price-data-canada/), utilities (phone, rent, electricity), transportation (car), grocery for a household of three, and preschool [source](https://wowa.ca/cost-of-living-canada)
+* `Difference` calculated by subtraction cost of living expenses for a year from $45,000 (NSERC PDF)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/cdrobich/SoS_funding/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+-------------------
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+All of the data used is publicly available, and the repository is licensed under a [Creative Commons Zero license](https://choosealicense.com/licenses/cc0-1.0/) and free for reuse. 
+
+Specific questions can be directed to [Courtney Robichaud](https://crobichaud.weebly.com/), who maintains the repo.
