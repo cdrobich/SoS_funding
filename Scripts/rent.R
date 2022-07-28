@@ -1,6 +1,9 @@
 library(tidyverse)
 library(ggsci)
 
+
+# Grad Students -----------------------------------------------------------
+
 rent <- read.csv("Data/rent_cities.csv")
 colnames(rent)
 str(rent)
@@ -38,3 +41,38 @@ rent_long %>%
 
 
 ggsave("Figures/rent_tuition.jpeg")
+
+
+# Postdocs ----------------------------------------------------------------
+
+pdf <- read.csv('Data/pdf_costofliving.csv')
+colnames(pdf)
+str(pdf)
+
+pdf <- pdf %>% 
+  mutate(difference = 45000 - yearly_expenses)
+
+
+write.csv(pdf, "Data/pdf_differences.csv", row.names = FALSE)
+
+pdf %>% 
+  arrange(desc(difference)) %>% 
+  ggplot(aes(x = City, y = difference)) +
+  geom_segment( aes(x = City, xend = City,
+                    y = 0, yend = difference),
+                lwd = 2, color = "#293241") +
+  geom_point( color = "#EE6C4D", size=6) +
+  theme_light() +
+  theme(
+    panel.grid.major.x = element_blank(),
+    panel.border = element_blank(),
+    axis.ticks.x = element_blank(),
+    axis.text = element_text(size = 14)
+  ) +
+  xlab("") +
+  ylab("CAD ($)") +
+  scale_y_continuous(labels = scales::comma,
+                     limits = c(-40000, 10000))
+
+
+
