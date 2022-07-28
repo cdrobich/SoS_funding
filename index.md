@@ -38,4 +38,4 @@ This is the repository for the data and code used by [Support Our Science](www.s
 
 All of the data used is publicly available, and the repository is licensed under a [Creative Commons Zero license](https://choosealicense.com/licenses/cc0-1.0/) and free for reuse. 
 
-Specific questions can be directed to [Courtney Robichaud](https://crobichaud.weebly.com/), who maintains the repo.
+Specific questions can be directed to [Courtney Robichaud](https://crobichaud.weebly.com/).
