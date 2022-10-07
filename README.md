@@ -13,7 +13,7 @@
 `NSERC_funding_inflation_May20`
 * NSERC funding for CGS-M, PGS-D, CGS-D, and PDF from 2003 to present
 * Inflation calculated using [Bank of Canada info](https://www.bankofcanada.ca/rates/related/inflation-calculator/)
-* `single` and `four` represent the poverty line for a single person and a family of four, respectively, in a community of > 500k [Link](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=11100241010)
+* `single` and `four` represent the poverty line for a single person and a family of four, respectively, in a community of > 500k [Link]( https://doi.org/10.25318/1110024101-eng)
 
 `pdf_costofliving`
 * Cost of living information for major cities in Canada which includes rent for a [2-bedroom apartment](https://www.zumper.com/blog/rental-price-data-canada/), utilities (phone, rent, electricity), transportation (car), grocery for a household of three, and preschool [source](https://wowa.ca/cost-of-living-canada)
