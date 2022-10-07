@@ -16,5 +16,5 @@
 * `single` and `four` represent the poverty line for a single person and a family of four, respectively, in a community of > 500k [Link](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=11100241010)
 
 `pdf_costofliving`
-* Cost of living information for major cities in Canada which includes rent for a [2-bedroom apartment]((https://www.zumper.com/blog/rental-price-data-canada/), utilities (phone, rent, electricity), transportation (car), grocery for a household of three, and preschool [source](https://wowa.ca/cost-of-living-canada)
+* Cost of living information for major cities in Canada which includes rent for a [2-bedroom apartment](https://www.zumper.com/blog/rental-price-data-canada/), utilities (phone, rent, electricity), transportation (car), grocery for a household of three, and preschool [source](https://wowa.ca/cost-of-living-canada)
 * `Difference` calculated by subtraction cost of living expenses for a year from $45,000 (NSERC PDF)
