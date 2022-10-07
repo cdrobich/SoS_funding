@@ -61,9 +61,9 @@ award_inlf <- inflation_May20 %>%
 
 awards_inflation <- ggplot(NULL, aes(year, amount, 
                                      group = funding)) +
-  #geom_line(data = poverty_line, lwd = 1,
-            #colour = "red",
-            #alpha = 0.7) +
+  geom_line(data = poverty_line, lwd = 1,
+            colour = "red",
+            alpha = 0.7) +
   geom_line(data = awards, lwd = 2.5,
             aes(colour = funding)) +
   #geom_line(data = inflation, lwd = 1.5, linetype = "dotdash",
